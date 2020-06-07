@@ -38,9 +38,7 @@ class HeaderInfo extends StatelessWidget {
                   size: 40,
                   color: Color(0xFF211F1F),
                 ),
-                onPressed: () {
-                  _launchURL('http://www.google.com');
-                },
+                onPressed: () => _launchURL('https://github.com/leopalmeiro'),
               ),
               IconButton(
                 icon: Icon(
@@ -48,15 +46,8 @@ class HeaderInfo extends StatelessWidget {
                   size: 40,
                   color: Color(0xFF007bb5),
                 ),
-                onPressed: () {},
-              ),
-              IconButton(
-                icon: Icon(
-                  FontAwesomeIcons.envelope,
-                  size: 40,
-                  color: Colors.black,
-                ),
-                onPressed: () {},
+                onPressed: () => _launchURL(
+                    'https://www.linkedin.com/in/leonardo-palmeiro-834a1755'),
               ),
               IconButton(
                 icon: Icon(
@@ -64,7 +55,17 @@ class HeaderInfo extends StatelessWidget {
                   size: 40,
                   color: Color(0xFF02b875),
                 ),
-                onPressed: () {},
+                onPressed: () =>
+                    _launchURL('https://medium.com/@palmeiro.leonardo'),
+              ),
+              IconButton(
+                icon: Icon(
+                  FontAwesomeIcons.envelope,
+                  size: 40,
+                  color: Colors.black,
+                ),
+                onPressed: () =>
+                    _launchURL('mailto://palmeiro.leoanardo@gmail.com'),
               ),
             ],
           )

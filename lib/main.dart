@@ -1,4 +1,7 @@
+import 'dart:ui';
+
 import 'package:challengeProfile04/screens/header_box_screen.dart';
+import 'package:challengeProfile04/screens/info_box_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -78,7 +81,14 @@ class _MyHomePageState extends State<MyHomePage> {
               fit: BoxFit.cover,
             ),
           ),
-          HeaderBoxScreen(),
+          Container(
+            margin: EdgeInsets.only(top: 50),
+            child: HeaderBoxScreen(),
+          ),
+          Container(
+            margin: EdgeInsets.only(top: 300),
+            child: InfoBoxScreen(),
+          ),
         ],
       ),
       backgroundColor: Colors.blueGrey,
